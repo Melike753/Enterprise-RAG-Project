@@ -11,25 +11,26 @@
 
 ## 📝 1. Proje Özeti ve Problem Tanımı
 
-Geleneksel chatbotlar, eğitildikleri verilerle sınırlıdır ve güncel kurumsal dökümanlar hakkında bilgi sahibi değildirler. Bulut tabanlı çözümler (OpenAI vb.) ise veri gizliliği açısından risk oluşturabilir. Kurumsal hafızanın korunması ve şirket içi bilgilere (çalışma düzeni, kültür, iletişim vb.) hızlı erişim, büyüyen ekipler için kritik bir ihtiyaçtır. Bu proje, verilerin gizliliğini korumak amacıyla tamamen yerel (local) kaynaklarda çalışan, halüsinasyon riskini minimize eden sistem talimatları sayesinde sadece verilen dökümana sadık cevaplar üreten, döküman dışı bilgi uydurmayan (anti-hallucination) bir asistan sunarak bu ihtiyacı karşılar.
+Geleneksel chatbotlar, eğitildikleri verilerle sınırlıdır ve güncel kurumsal dokümanlar hakkında bilgi sahibi değildirler. Bulut tabanlı çözümler (OpenAI vb.) ise veri gizliliği açısından risk oluşturabilir. Kurumsal hafızanın korunması ve şirket içi bilgilere (çalışma düzeni, kültür, iletişim vb.) hızlı erişim, büyüyen ekipler için kritik bir ihtiyaçtır. Bu proje, verilerin gizliliğini korumak amacıyla tamamen yerel (local) kaynaklarda çalışan, halüsinasyon riskini minimize eden sistem talimatları sayesinde sadece verilen dokümana sadık cevaplar üreten, doküman dışı bilgi uydurmayan (anti-hallucination) bir asistan sunarak bu ihtiyacı karşılar.
 
 ---
 
 ## 📸 Uygulama Ekran Görüntüleri
 
-| :---: | :---: | :---: |
-| <img src="assets/ana_ekran1.png" width="300"> | <img src="assets/ana_ekran2.png" width="300"> | <img src="assets/ana_ekran3.png" width="300"> |
+<img src="assets/ana_ekran1.png" width="300"> <img src="assets/ana_ekran2.png" width="300"> <img src="assets/ana_ekran3.png" width="300"> 
 
-| :---: | :---: | :---: |
-| <img src="assets/ana_ekran4.png" width="300"> | <img src="assets/ana_ekran5.png" width="300"> | <img src="assets/ana_ekran6.png" width="300"> |
+<img src="assets/ana_ekran4.png" width="300"> <img src="assets/ana_ekran5.png" width="300"> <img src="assets/ana_ekran6.png" width="300"> 
 
 ---
 
 ## 🛠 2. Kullanılan Teknolojiler ve Tercih Nedenleri
 
 **Gemma 2 9B (via Ollama)**: Google'ın açık kaynaklı modeli; yerel sistemlerde yüksek mantık yürütme kapasitesi ve kusursuz Türkçe desteği sunduğu için seçildi.
-**ChromaDB**: Hafif, hızlı, persistent(kalıcı) yapısı sayesinde ve etkili anlamsal arama (cosine similarity) yetenekleri sunduğu için milyonlarca vektörü düşük gecikmeyle arayabildiği için tercih edildi.
+
+**ChromaDB**: Hafif, hızlı, persistent (kalıcı) yapısı sayesinde ve etkili anlamsal arama (cosine similarity) yetenekleri sunduğu için milyonlarca vektörü düşük gecikmeyle arayabildiği için tercih edildi.
+
 **FastAPI**: Hızlı, asenkron, modern bir REST API altyapısı sağlamak için ve düşük kaynak tüketimi ile model cevap üretirken sistemin kilitlenmesini önlediği için seçildi.
+
 **Streamlit**: Teknik olmayan kullanıcıların da yapay zeka ile etkileşime girmesini sağlayan, kullanıcı dostu, modern bir UX/UI sunduğu için tercih edilmiştir.
 
 ---
@@ -37,9 +38,13 @@ Geleneksel chatbotlar, eğitildikleri verilerle sınırlıdır ve güncel kurums
 ## 📐 3. Sistem Mimarisi
 
 Sistem, veriyi ham metinden anlamlı bir cevaba dönüştürmek için 4 aşamalı bir boru hattı (**pipeline**) kullanır:
+
 **Ingestion (Veri Besleme)**: data/sirket_bilgileri.txt dosyası, anlamsal bütünlüğü koruyacak şekilde akıllı parçalara (chunking) ayrılır.
+
 **Vectorization (Vektörleştirme)**: Her bir metin parçası, ChromaDB üzerinde Cosine Similarity (Açısal Benzerlik) metriği ile koordinatlandırılır.
+
 **Context-Aware Retrieval**: Kullanıcı bir soru sorduğunda, sistem veritabanından sorunun "anlamına" en yakın 4 adet bilgi parçasını cımbızla çeker.
+
 **Guardrailed Generation**: Seçilen bilgiler ve kullanıcı sorusu, önceden kurgulanmış "Sistem Talimatları" ile birleştirilerek Gemma 2'ye iletilir. Model, döküman dışına çıkmadan profesyonel bir cevap üretir.
 
 ---
@@ -59,6 +64,7 @@ Geliştirme sürecinde donanım sınırları (**16GB RAM**) bir engel değil, bi
 ### Ön Hazırlık
 
 **1.Ollama Kurulumu:** [Ollama.com](https://ollama.com) üzerinden uygulamayı indirin.
+
 **2.Modeli İndirin:** Terminale şu komutu yazın:
 
 ```bash
@@ -136,13 +142,13 @@ Proje, sürdürülebilir geliştirme (maintainability) ve kod okunabilirliği pr
 
 ## 🌟 Son Söz
 
-Bu proje, yerel imkanlarla neler başarılabileceğini görmeye çalıştığım bir mühendislik yolculuğuydu. Donanım limitlerini zorladığım (özellikle o %90 RAM kullanımı! 😅), her bir satır kodda mantıklı bir akış kurmaya çalıştığım bu süreçte; sistemin karmaşık sorulara dökümanlara sadık kalarak doğru yanıtlar vermesi en büyük motivasyonumdu.
+Bu proje, yerel imkanlarla neler başarılabileceğini görmeye çalıştığım bir mühendislik yolculuğuydu. Donanım limitlerini zorladığım (özellikle o %90 RAM kullanımı! 😅), her bir satır kodda mantıklı bir akış kurmaya çalıştığım bu süreçte; sistemin karmaşık sorulara dokümanlara sadık kalarak doğru yanıtlar vermesi en büyük motivasyonumdu.
 
 Vaktinizi ayırıp projemi incelediğiniz için teşekkür ederim. Gelecekte bu asistanı daha hızlı ve daha zeki hale getirmek için sabırsızlanıyorum!
 
----
-
 **Geliştiren:** *Melike Dönmez*
-🚀 *Y İnovasyon AI - Kurumsal Hafızanın Yeni Yüzü*
+
+*Y İnovasyon AI - Kurumsal Hafızanın Yeni Yüzü* 🚀
+
 
 ---
