@@ -17,9 +17,16 @@ Geleneksel chatbotlar, eğitildikleri verilerle sınırlıdır ve güncel kurums
 
 ## 📸 Uygulama Ekran Görüntüleri
 
-<img src="assets/ana_ekran1.png" width="300"> <img src="assets/ana_ekran2.png" width="300"> <img src="assets/ana_ekran3.png" width="300"> 
-
-<img src="assets/ana_ekran4.png" width="300"> <img src="assets/ana_ekran5.png" width="300"> <img src="assets/ana_ekran6.png" width="300"> 
+<p align="center">
+  <img src="assets/ana_ekran1.png" width="31%" />
+  <img src="assets/ana_ekran2.png" width="31%" />
+  <img src="assets/ana_ekran3.png" width="31%" />
+</p>
+<p align="center">
+  <img src="assets/ana_ekran4.png" width="31%" />
+  <img src="assets/ana_ekran5.png" width="31%" />
+  <img src="assets/ana_ekran6.png" width="31%" />
+</p>
 
 ---
 
@@ -152,3 +159,4 @@ Vaktinizi ayırıp projemi incelediğiniz için teşekkür ederim. Gelecekte bu 
 
 
 ---
+
