@@ -1,0 +1,30 @@
+Y İNOVASYON VE TEKNOLOJİ A.Ş. - KURUMSAL EL KİTABI 
+
+[BÖLÜM 1: KURUMSAL KİMLİK VE VİZYON]
+Kuruluş Tarihi: Y İnovasyon, 2023 yılında kurulmuş bir teknoloji şirketidir.
+Şirket Misyonu: Dünyayı en iyi mühendislerle güçlendirmek ve dijital dönüşüme rehberlik etmek.
+Kurumsal Kültür: Gerçek gücün bilgiden geldiğine inanıyoruz. Bizim için öğrenmenin özü "neden" diye sorma sanatıdır. Sorgulamayı, derinlemesine araştırmayı ve mevcut düzene (statüko) meydan okumayı bir kültür olarak benimsiyoruz.
+Gelecek Vizyonu: Yerel yapay zeka çözümleri ve nitelikli mühendislik gücüyle global çapta dijital dönüşüme öncülük etmek.
+
+[BÖLÜM 2: İLETİŞİM VE LOKASYON]
+Resmi Web Sitesi: https://www.yinovasyon.com
+İletişim Bilgileri ve Telefon: +905317371224 (Ulaşım, numara, telefon hattı).
+Genel Merkez Konumu: İstanbul, Türkiye.
+Sektör Odağı: Teknoloji, Bilgi Teknolojileri ve İnternet Hizmetleri.
+Destek, Yardım ve Sorular: Teknik veya idari tüm sorularınız için ilgili kanal sorumlularına Slack üzerinden ulaşabilirsiniz. (Kime yazmalıyım, nereden ulaşırım soruları için).
+
+[BÖLÜM 3: ÇALIŞMA DÜZENİ VE MESAİ]
+Haftalık Çalışma Süresi: Toplam 45 saattir.
+Günlük Mesai Saatleri: Mesai sabah 09:00'da başlar ve akşam 18:00'de sona erer. (Çalışma saatleri, giriş-çıkış vakitleri).
+Hibrit Çalışma Modeli: Şirketimizde "Mühendislik Odaklı" esnek çalışma modeli uygulanır.
+Ofis Günleri (Yüz Yüze): Salı ve Perşembe günleri tüm çalışanların ofiste olması beklenen ortak ofis günleridir.
+Uzaktan Çalışma (Remote): Pazartesi, Çarşamba ve Cuma günleri çalışanlar uzaktan (remote) çalışma hakkına sahiptir.
+
+[BÖLÜM 4: ARAÇLAR VE İLETİŞİM KANALLARI]
+Anlık İletişim ve Yazışma: Tüm şirket içi yazışmalar ve anlık iletişim Slack uygulaması üzerinden yürütülür.
+Dökümantasyon ve Proje Takibi: Teknik dökümanlar, projeler ve kurumsal hafıza takibi için Notion platformu kullanılır.
+Toplantılar ve Görüşmeler: Görüntülü toplantılar için öncelikli olarak Google Meet tercih edilir.
+
+[BÖLÜM 5: SOSYAL HAKLAR VE DİĞER BİLGİLER]
+Yemek Düzeni ve Menü: Ofis günlerinde yemek organizasyonu şirket tarafından belirlenen restoranlarda sağlanır. Günlük yemek menüsü her sabah Slack üzerinden duyurulur. (Özel bir sabit menü bulunmamaktadır).
+Yıllık İzin ve Tatil: Çalışanlar kanuni süreler çerçevesinde yıllık ücretli izin hakkına sahiptir.

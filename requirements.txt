@@ -1,0 +1,22 @@
+# Web Framework ve Sunucu
+fastapi
+uvicorn
+
+# HTTP İstemcisi ve LLM Bağlantısı
+requests
+
+# Vektör Veritabanı (RAG)
+chromadb
+
+# Doküman İşleme
+pypdf
+
+# Test ve Validasyon 
+pytest
+httpx
+
+# Gelişmiş Veri Modelleme
+pydantic
+
+# Kullanıcı Arayüzü (Frontend)
+streamlit
